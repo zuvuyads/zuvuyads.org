@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="40" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+    <rect width="120" height="40" rx="8" fill="#4a2c82"/>
+    <g transform="translate(10, 8)">
+        <path d="M10 5C7.24 5 5 7.24 5 10v5h10v-5c0-2.76-2.24-5-5-5zm0 10c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" fill="#ffffff"/>
+        <path d="M10 0C4.48 0 0 4.48 0 10v10h20V10c0-5.52-4.48-10-10-10zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z" fill="#ffffff"/>
+    </g>
+    <text x="40" y="25" font-family="Arial" font-size="14" fill="#ffffff">SSL Secure</text>
+</svg> 
