@@ -535,60 +535,6 @@ body {
     font-size: 1.5rem;
 }
 
-/* Testimonials Section */
-.testimonials {
-    padding: 5rem 2rem;
-    background-color: var(--light-bg);
-}
-
-.testimonials h2 {
-    text-align: center;
-    margin-bottom: 3rem;
-    color: var(--primary-color);
-    font-size: clamp(1.8rem, 3vw, 2.5rem);
-}
-
-.testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    max-width: var(--max-width);
-    margin: 0 auto;
-}
-
-.testimonial-card {
-    background: var(--white);
-    padding: 2rem;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    position: relative;
-}
-
-.testimonial-card::before {
-    content: '"';
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    font-size: 4rem;
-    color: var(--secondary-color);
-    opacity: 0.2;
-    font-family: serif;
-}
-
-.testimonial-card p {
-    margin-bottom: 1rem;
-    font-style: italic;
-    position: relative;
-    z-index: 1;
-}
-
-.testimonial-card cite {
-    display: block;
-    text-align: right;
-    color: var(--primary-color);
-    font-weight: bold;
-}
-
 /* FAQ Section */
 .faq {
     padding: 5rem 2rem;
@@ -669,5 +615,174 @@ body {
     .testimonial-card,
     .faq-item {
         margin: 0 1rem;
+    }
+}
+
+/* Benefits Section */
+.benefits {
+    padding: 5rem 2rem;
+    background-color: var(--white);
+}
+
+.benefits h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.benefit-card {
+    text-align: center;
+    padding: 2rem;
+    background: var(--light-bg);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow);
+}
+
+.benefit-card i {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.benefit-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Case Studies Section */
+.case-studies {
+    padding: 5rem 2rem;
+    background-color: var(--white);
+}
+
+.case-studies h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+.case-studies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.case-study-card {
+    background: var(--light-bg);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.case-study-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.case-study-metrics {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.metric {
+    text-align: center;
+}
+
+.metric-value {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.metric-label {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+/* Trust Badges Section */
+.trust-badges {
+    padding: 5rem 2rem;
+    background-color: var(--white);
+}
+
+.trust-badges-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.trust-badges img {
+    opacity: 0.8;
+    transition: var(--transition);
+}
+
+.trust-badges img:hover {
+    opacity: 1;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.cta-button.primary {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+.cta-button.secondary {
+    background-color: transparent;
+    border: 2px solid var(--white);
+    color: var(--white);
+}
+
+.cta-button.secondary:hover {
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .social-proof-content,
+    .benefits-grid,
+    .case-studies-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+    }
+    
+    .pricing-card.featured {
+        transform: none;
     }
 } 
