@@ -1056,10 +1056,7 @@ blockquote cite {
     text-decoration: underline;
 }
 
-/* Contact section heading */
-.contact h2 {
-    color: var(--text-dark);
-}
+
 
 /* Footer */
 .footer {
